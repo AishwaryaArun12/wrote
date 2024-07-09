@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'gilroyBold';
+  src: url('/font/Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroyLight';
+  src: url('/font/Gilroy-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroyRegular';
+  src: url('/font/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: black;
+  color: white;
+  font-family: 'gilroyRegular', sans-serif;
+}
+.gilroyBold{
+  font-family: 'gilroyBold', sans-serif;
+}
+.light{
+  font-family: 'gilroyLight', sans-serif;
+}
+ 
+
+.oxanium {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oxaniumBold {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+
+.navHead{
+  font-family: Oxanium;
+font-size: 30px;
+
+}
+.mainHead{
+ 
+  -webkit-text-fill-color: linear-gradient(90deg, #EEFFF7 0%, #3D9970 40%, #3D9970 110.8%);
+  font-family: 'gilroyBold', sans-serif;
+  
+  font-weight: 400;
+ 
+  letter-spacing: 0.01em;
+  text-align: center; 
+}
+.inputbg{
+  background: linear-gradient(90deg, rgba(218, 218, 218, 0.15) 0%, rgba(153, 151, 149, 0.15) 100%);
+}
+.buttonbg{
+  background: linear-gradient(180deg, #3D9970 0%, #143325 100%);
+  z-index: 10;
+}
+.imgbg{
+  background: linear-gradient(90deg, rgba(218, 218, 218, 0.12) 0%, rgba(153, 151, 149, 0.12) 100%);
+
+}
+.pricebuttonbg{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+.parent{
+  border: 1px solid transparent; /* Set initial border as transparent */
+  transition: border-color 0.3s ease; /* Smooth transition for border color change */
+  position: relative;
+}
+
+
+
+
+.parent:hover .pricebuttonbg {
+  /* Style to apply when .child is hovered */
+  background: linear-gradient(180deg, #3D9970 0%, rgba(61, 153, 112, 0.41) 100%);
+  
+}
+.parent:hover{
+  border: 1px solid;
+  border-image-source: linear-gradient(180deg, rgba(43, 255, 255, 0.32) 0%, rgba(43, 255, 255, 0.1) 50%, rgba(43, 255, 255, 0.16) 100%);
+  border-image-slice:1;
+  border-radius: 20px;
+}
+.pricebg{
+  background: linear-gradient(195.05deg, rgba(43, 255, 255, 0.1) 0%, rgba(10, 200, 200, 0.127) 50%, rgba(43, 255, 255, 0.06) 100%);
+
+}
+.animated-text {
+ 
+  background: linear-gradient(90deg, #FFFFFF 0%, #3D9970 2.1%, #3D9970 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 10s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(90deg, #FFFFFF 0%, #3D9970 2.1%, #3D9970 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background: linear-gradient(90deg, #FFFFFF 0%, #3D9970 39.5%, #3D9970 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background: linear-gradient(90deg, #FFFFFF 32.17%, #7BBA9E 54.01%, #3D9970 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: linear-gradient(90deg, #FFFFFF 60.16%, #3D9970 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background: linear-gradient(90deg, #FFFFFF 32.17%, #7BBA9E 54.01%, #3D9970 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(90deg, #FFFFFF 0%, #3D9970 2.1%, #3D9970 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+
